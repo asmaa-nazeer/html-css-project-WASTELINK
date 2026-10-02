@@ -135,7 +135,7 @@
     border-radius: 10px;
     padding: 18px 14px;
     position: relative;
-}.sec2-card::after{
+}.sec2-card::after,.sec4-card::after{
     content: "";
     position: absolute;
     width: 0px;
@@ -151,7 +151,7 @@
 }.sec2-div2{
     margin: 0px 5%;
 }.sec2-card:hover ,.sec4-card:hover,.sec7-card:hover, .sec9-card:hover  {
-    color: rgb(7, 86, 7);
+    color: rgb(3, 50, 3);
 }.sec2-line, .sec3-line,.sec4-line, .sec7-line, .sec9-line, .sec10-line{
     width: 300px;
     height: 3px;
@@ -240,16 +240,8 @@
     border-radius: 10px;
     padding: 20px;
     position: relative;
-}.sec4-card::after{
-    content: "";
-    position: absolute;
-    width: 0px;
-    height: 0px;
-    top: 0;
-    left: 0;
-    background-color: rgb(25, 92, 39, 0.3);
-    border-radius: 10px;
-}.sec4-card:hover::after{
+}
+.sec4-card:hover::after{
     width: 100%;
     height: 100%;
     transition: 1s;
@@ -259,11 +251,14 @@
     margin-top: 15px;
 }.sec4-card i, .sec11-content i{
     font-size: 20px;
-    color: black;
+    color: white;
     background-color: rgb(70, 114, 70);
     border-radius: 50%;
     padding: 10px;
-}.sec5{
+}.sec11-content i{
+    color: black;
+}
+.sec5{
     height: 100vh;
 }.sec5-container{
     width: 80%;
@@ -315,7 +310,7 @@
     padding: 20px;
     margin-top: 15vh;
 }.sec6-card i{
-    color:rgb(70, 114, 70) ;
+    color:rgb(182, 224, 182) ;
     font-size: 30px;
 }.sec6-card3, .sec6-card4, .sec6-card2{
     margin-left: 4% ;
@@ -334,7 +329,7 @@
     float: left;
     position: relative;
     border: 2px solid rgb(70, 114, 70);
-}.sec7-card::after{
+}.sec7-card::after,.sec9-card::after, .sec10-card::after{
     content: "";
     position: absolute;
     width: 100%;
@@ -343,12 +338,10 @@
     left: 0;
     background-color: rgb(25, 92, 39, 0.3);
     border-radius: 10px;
-}.sec7-card:hover::after{
+}.sec7-card:hover::after,.sec9-card:hover:after, .sec10-card:hover:after{
     width: 100%;
     height: 100%;
     transition: 1s;
-}.sec7-card:hover{
-    color: rgb(70, 114, 70);
 }.sec7-card2{
     margin: 0px 5%;
 }.sec7-heading{
@@ -416,19 +409,6 @@
     position: relative;
     border: 2px solid rgb(70, 114, 70);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}.sec9-card::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 0px;
-    top: 0;
-    left: 0;
-    background-color: rgb(25, 92, 39, 0.3);
-    border-radius: 10px;
-}.sec9-card:hover::after{
-    width: 100%;
-    height: 100%;
-    transition: 1s;
 }.sec9-div2{
     margin: 0px 5%;
 }.sec9-package{
@@ -475,19 +455,6 @@
     border: 2px solid rgb(70, 114, 70);
 }.sec10-card:hover .sec10-bold, .sec10-card i{
     color: rgb(70, 114, 70);
-}.sec10-card::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 0px;
-    top: 0;
-    left: 0;
-    background-color: rgb(25, 92, 39, 0.3);
-    border-radius: 10px;
-}.sec10-card:hover::after{
-    width: 100%;
-    height: 100%;
-    transition: 1s;
 }.sec10-card2{
     margin: 0px 5%;
 }.sec10-img{
@@ -513,7 +480,7 @@
 }.sec11-content i{
     background-color: white;
 }.sec11 i:hover {
-    background-color: rgb(70, 114, 70);
+    background-color: rgb(209, 232, 209);
 }button{
     cursor: pointer;
 }
